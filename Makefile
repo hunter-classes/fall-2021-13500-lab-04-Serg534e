@@ -1,11 +1,11 @@
 
 main: main.o shapes.o
-		g++ -o main main.o shapes.o
+	g++ -o main main.o shapes.o
 
 main.o: main.cpp shapes.h
-		g++ -c main.cpp
+	g++ -c main.cpp
 shapes.o: shapes.cpp shapes.h
-		g++ -c shapes.cpp
+	g++ -c shapes.cpp
 
 clean:
-		rm *.o main
+	rm *.o main
